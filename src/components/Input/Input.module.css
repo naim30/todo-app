@@ -1,0 +1,19 @@
+.Input {
+  padding: 10px;
+  background-color: #e6ebed;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  color: rgb(148, 89, 1);
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.Input::placeholder {
+  color: rgb(240, 151, 17);
+}
+
+.Input:focus {
+  outline: none;
+}

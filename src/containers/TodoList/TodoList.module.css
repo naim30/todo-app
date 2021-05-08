@@ -1,0 +1,26 @@
+.Container {
+  background-color: transparent;
+  width: 350px;
+}
+
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+div.Container > div:first-child {
+  height: 3px;
+  background-color: rgb(41, 0, 75);
+  transition: 0.5s ease-out;
+}
+
+@media (max-width: 500px) {
+  .Container {
+    width: 300px;
+  }
+}

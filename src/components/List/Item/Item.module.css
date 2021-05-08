@@ -1,0 +1,57 @@
+.Item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  color: rgb(6, 0, 31);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.Item:hover {
+  background-color: antiquewhite;
+  border-radius: 3px;
+}
+
+.Item input {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  box-shadow: none;
+  appearance: none;
+  border: 1px solid rgb(6, 0, 31);
+  border-radius: 2.5px;
+}
+
+.Item input:checked {
+  background-color: rgb(6, 0, 31);
+  position: relative;
+}
+
+.Item input:checked::after {
+  content: "heelo";
+  color: red;
+  content: "";
+  position: absolute;
+  left: 2.3px;
+  top: 5.4px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 1px 0 0 white, 3px 0 0 white, 3px -1px 0 white, 3px -3px 0 white,
+    3px -5px 0 white, 3px -7px 0 white;
+  transform: rotate(45deg);
+}
+
+.Item > div {
+  text-decoration: none;
+  text-decoration-color: transparent;
+  transition: 0.2s ease-in-out;
+  height: auto;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.Item > div.checked {
+  opacity: 0.5;
+  text-decoration: line-through;
+}

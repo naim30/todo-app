@@ -1,0 +1,16 @@
+.Heading {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: inherit;
+  border: none;
+  color: rgb(97, 0, 0);
+}
+
+.Heading::placeholder {
+  color: rgb(175, 175, 175);
+}
+
+.Heading:focus {
+  outline: none;
+}
